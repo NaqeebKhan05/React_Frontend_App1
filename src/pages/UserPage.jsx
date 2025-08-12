@@ -1,18 +1,18 @@
 import React from "react";
-import Userdetails from "./components/common/UserDetails";
+import UserDetails from "../components/common/UserDetails";
 
-const users = {
+const user = {
   id: 1,
-  name: "Azee",
-  age: 22,
+  name: "Naqeeb Khan",
+  age: 24,
 };
 
-function App() {
+const UserPage = () => {
   return (
-    <div>
-      <Userdetails user={users} />
+    <div className="max-w-md mx-auto bg-white p-6 rounded shadow">
+      <UserDetails user={user} />
     </div>
   );
-}
+};
 
-export default App;
+export default UserPage;
